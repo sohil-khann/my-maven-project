@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(to right, #ff9966, #ff5e62);
+	overflow: hidden; 
+}
+
+.container {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.13);
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-box {
+	width: 100%;
+	padding: 40px;
+	background: rgba(255, 255, 255, 0.13);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login-box h1 {
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	color: #ffffff;
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.13);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	color: #ffffff;
+}
+
+.form-group input:focus {
+	outline: none;
+	box-shadow: 0 1px 5px rgba(255, 255, 255, 0.4);
+}
+
+.form-group button {
+	width: 100%;
+	padding: 10px;
+	background: #ff5e62;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.form-group button:hover {
+	background: #ffc300;
+	color: #000000;
+}
+
+/* Animation */
+@keyframes animate {
+	0% {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(10px);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.container {
+	animation: animate 1s ease;
+}
+.radio{
+	text-emphasis-color: #efe5e5;
+	color: #efe5e5;
+	
+}
